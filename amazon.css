@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    /*mtlb jitna bhi border us element ko mile vo size uski height width ko bhi milen usually jb ham kisi elemtn ko height width dete h and border jb apply krte h to vo border us element ke bahar bnti h but ham chahte h ki vo border us height width ko bhi mile isly border box dia isse space milega perfect*/
+}
+
+/**box1**/
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    /* sari cheeze same line m ajayegi*/
+    align-items: center;
+    /* isse hamre elements top se bottom m center m ajyege*/
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 30px;
+    width: 95px;
+}
+
+.logo {
+    background-image: url(images.png);
+    background-size: cover;
+    height: 30px;
+    width: 95px;
+}
+
+.border {
+    border: 1.5px solid transparent;
+    /* box m scrool krne pr kuch line ari h isly transparent border bnai but vo dikh ni rhi so hover property lgake usme white border di to dikheag*/
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+/*box2*/
+
+.add-first {
+    /* isme phle to 2nd box ka deliver ka font and color alg tha isly class dedi ab us class m yha color and font bta dege*/
+    color: #cccccc;
+    font-size: 0.5rem;
+    /* rem m krrhe jaise height width sbme samme font rhe ye basically root element h*/
+    margin-left: 23px;
+    /*ab isme deliver jo h vo location ke bad likha h mtlb left se thoda gap h upr 15 px ka vo dia h isly left margin m 15px di*/
+}
+
+.add-second {
+    font-size: 1rem;
+    /* same isme bhi classs deke iska font bta dege*/
+    margin-left: 3px;
+    /* india bhi thoda dur h left se location se 3px vo dia left se*/
+
+}
+
+.add-icon {
+    display: flex;
+    /*ab agr location icona nd india ko ek hi line pr lana h to agr paragraph m india and icon agr ek hi div m are to uske liye display property set krdo ek line m ajayege*/
+    align-items: center;
+}
+
+/*box3*/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    /* all search amazon and search icon ke beech equally space hojaye */
+    background-color: rgb(215, 145, 13);
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    /* corner se  border thoda curve h isly*/
+
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 45px;
+    text-align: center;
+    /* All text ko beech m leaye isse*/
+    border-top-left-radius: 4px;
+    /* iski bhi border thodi curve thi but sirf top and bottom ke liye curve krna tha vo bhi left side ki to ye dia*/
+    border-bottom-left-radius: 4px;
+    border: none;
+    /*select ka border hat jayega*/
+}
+
+.search-input {
+    width: 100%;
+    /*isse jitta bhi search bar normally leta h width vo lelega bs search icon and all ke liye bs widht select krna hoga*/
+    font-size: 1rem;
+    /*search amazon ka font size thoda bda h isly 1 rem kia */
+    border: none;
+    /*isse by default jitta bhi border tha vo hat jayega*/
+
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    /* ye parent element ko flex kia jaise same line m aye*/
+    justify-content: center;
+    /*and parent ke andr icon ko center kia jaise beech m aye  but horizontal m aya h*/
+    align-items: center;
+    /*isse beech m ajayega vertical m bhi*/
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+    /*isse jb search box pr click krte h to ek orange border ati h vo di h hover krne pr*/
+}
+
+/*box4*/
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*box6*/
+
+.nav-cart i {
+    /* i h icon nav cart ka icon m krrhe h chnges  phle class ka name then uspe jitte bhi icon h vo uspr apply hoge*/
+    font-size: 30px;
+
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700px;
+}
+
+
+/*panels*/
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    /* center m ajyega sara text*/
+    justify-content: space-evenly;
+    /*horizontally center m lane ke liye justify content and ab space ajayega sbme*/
+}
+
+.panel-options p {
+    /* ham paragraph ko chng krrhe h isly p likha h*/
+    display: inline;
+    margin-left: 15px;
+    /*paragraph ke beech m thoda space h left se vo dia */
+}
+
+.panel-options {
+    width: 70%;
+    /* panel options ke bad kuch space h us line m width m isly 70% di */
+    font-size: 0.85rem;
+    /*panels options ka font thoda chota h and  panel deals ka bda to vo dia h*/
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+}
+
+/*hero section*/
+
+.hero-section {
+    background-image: url("amazon.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    /*isse left m ajayega*/
+    justify-content: center;
+    /*horizontally center m ayega*/
+    align-items: flex-end;
+    /*ab vertically ajayega beech m*/
+}
+
+.hero-msg {
+    background-color: white;
+    color: #0f1111;
+    height: 40px;
+    display: flex;
+    /* ab beech m ayega*/
+    align-items: center;
+    /*isse vertically beech m ayega*/
+    justify-content: center;
+    /*isse horizontaaly center m*/
+    font-size: 0.85rem;
+    /* which is 14px*/
+    width: 90%;
+    /* is text ka jo box h vo puri width ni lia adhi lia h screen se isly 90 dedi*/
+    margin-bottom: 25px;
+}
+
+.hero-msg a {
+    color: #2162A1;
+}
+
+/*shop-section*/
+
+.shop-section {
+    /*ye container h sb box ka*/
+    /*ye sare box ke liye bnai h class*/
+    display: flex;
+    /* ab sare box ek line mai ajayege*/
+    flex-wrap: wrap;
+    /* ab ek row m 4 hi ayega baki neeche box*/
+    justify-content: space-evenly;
+    /*flexbox use kia h sbme space evenly ajayega*/
+    background-color: #e2e7e6;
+}
+
+.box {
+    /* har box ko height color dene ke liye isme but box 1 box2 lene se accha box lelia jisse sbme aply ho*/
+    border: 2px solid black;
+    height: 400px;
+    /*thoda bda box bne to jada height di*/
+    width: 23%;
+    /*sbme space even aye isly ye width di*/
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+
+}
+
+
+.box-img {
+    height: 300px;
+    /* width: 100px; */
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    margin-left: 10px;
+    /* box ke left right m margin thi vo di*/
+    margin-right: 10px;
+}
+
+.box-content p {
+    color: #007185;
+}
+
+/*footer*/
+footer {
+    margin-top: 15px;
+    /*upr se thodi margin agyi h*/
+}
+
+.foot-panel1 {
+    background-color: #37475A;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    /* jb unordered list ko row m lana h to flex krdo uske parent ko ab sb ek sth ajayega */
+    justify-content: space-evenly;
+    /* ab sbka spce same hoga*/
+
+
+}
+
+.foot-panel2 p {
+    font-size: 20px;
+
+}
+
+ul {
+    margin-top: 40px;
+    /*ab list ke upr thodi margin di h jaise top se thode space bad aye*/
+}
+
+ul a {
+    display: block;
+    /*isse sb single line m ajayega*/
+    font-size: 0.85rem;
+    /*ab anchor ka font chota h vo dia*/
+    margin-top: 10px;
+    /* ab anchor tag m upr se kuch margin ajayegi sbke beech*/
+    color: #dddddd;
+
+}
+
+/*foot-panel3*/
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border: 0.5px solid white;
+    /*ek line dikhri h white color ki vo di h foot panel k bad*/
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amazon_logo {
+    background-image: url("images.png");
+    background-size: cover;
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.divs {
+    height: 15px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 16px;
+    border: 0.5px solid white;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    font-family: Arial;
+    background-color: #37475A;
+    margin-left: 20px;
+}
+
+.divs i {
+    height: 18px;
+    width: 12px;
+    margin-left: 3px 0px 0px;
+}
+
+span {
+    height: 20px;
+    width: 18px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+
+/*foot-panel4*/
+.foot-panel4 {
+    background-color: #131A22;
+    color: #cccccc;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.pages {
+    padding-top: 25px;
+    /*top se space milega*/
+}
+
+.copyright {
+    padding-top: 5px;
+
+}
